@@ -6,7 +6,7 @@ services:
     restart: always
     volumes:
       - "/public:/wsc"
-      - "/docker/nginx/nginx.conf:/etc/nginx/nginx.conf"
+      - "/docker/nginx/nginx.conf:/etc/nginx/nginx.conf:ro"
       - "/docker/nginx/realip.conf:/etc/nginx/conf.d/realip.conf"
       - "/docker/nginx/site.conf:/etc/nginx/conf.d/default.conf"
     ports:
