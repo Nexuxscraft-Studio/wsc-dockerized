@@ -10,7 +10,7 @@ services:
       - "/docker/nginx/realip.conf:/etc/nginx/conf.d/realip.conf"
       - "/docker/nginx/site.conf:/etc/nginx/conf.d/default.conf"
     ports:
-      - "${FPM_PORT:-80}:9080"
+      - "9080:9080"
     networks:
       - wsc-network
 
