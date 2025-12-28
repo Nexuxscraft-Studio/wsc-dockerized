@@ -37,7 +37,7 @@ services:
     image: "mariadb:lts"
     restart: always
     volumes:
-      - "./docker/mysql/conf/my.cnf:/etc/mysql/my.cnf:ro"
+      - "/data/compose/18/docker/mysql/conf/my.cnf:/etc/mysql/my.cnf:ro"
     environment:
       MYSQL_ROOT_HOST: 172.*.*.*
       MYSQL_RANDOM_ROOT_PASSWORD: "yes"
